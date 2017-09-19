@@ -85,6 +85,8 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="折腾社区" type="application/atom+xml" />
+
 
 
 
@@ -206,18 +208,8 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -246,22 +238,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            日程表
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            站点地图
+            关于
           </a>
         </li>
       
@@ -284,6 +266,137 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://getgv.com/2017/09/19/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小狗熊殿下">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="折腾社区">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/19/test/" itemprop="url">test</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-19T10:19:26+08:00">
+                2017-09-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/09/19/test/" class="leancloud_visitors" data-flag-title="test">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="TEST"><a href="#TEST" class="headerlink" title="TEST"></a>TEST</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> asyncio, logging</div><div class="line"></div><div class="line"><span class="keyword">import</span> aiomysql</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">log</span><span class="params">(sql, args=<span class="params">()</span>)</span>:</span></div><div class="line">    logging.info(<span class="string">'SQL: %s'</span> % sql)</div><div class="line"></div><div class="line"><span class="meta">@asyncio.coroutine</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_pool</span><span class="params">(loop, **kw)</span>:</span></div><div class="line">    logging.info(<span class="string">'create database connection pool...'</span>)</div><div class="line">    <span class="keyword">global</span> __pool</div><div class="line">    __pool = <span class="keyword">yield</span> <span class="keyword">from</span> aiomysql.create_pool(</div><div class="line">        host=kw.get(<span class="string">'host'</span>, <span class="string">'localhost'</span>),</div><div class="line">        port=kw.get(<span class="string">'port'</span>, <span class="number">3306</span>),</div><div class="line">        user=kw[<span class="string">'user'</span>],</div><div class="line">        password=kw[<span class="string">'password'</span>],</div><div class="line">        db=kw[<span class="string">'db'</span>],</div><div class="line">        charset=kw.get(<span class="string">'charset'</span>, <span class="string">'utf8'</span>),</div><div class="line">        autocommit=kw.get(<span class="string">'autocommit'</span>, <span class="keyword">True</span>),</div><div class="line">        maxsize=kw.get(<span class="string">'maxsize'</span>, <span class="number">10</span>),</div><div class="line">        minsize=kw.get(<span class="string">'minsize'</span>, <span class="number">1</span>),</div><div class="line">        loop=loop</div><div class="line">    )</div><div class="line"></div><div class="line"><span class="meta">@asyncio.coroutine</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">select</span><span class="params">(sql, args, size=None)</span>:</span></div><div class="line">    log(sql, args)</div><div class="line">    <span class="keyword">global</span> __pool</div><div class="line">    <span class="keyword">with</span> (<span class="keyword">yield</span> <span class="keyword">from</span> __pool) <span class="keyword">as</span> conn:</div><div class="line">        cur = <span class="keyword">yield</span> <span class="keyword">from</span> conn.cursor(aiomysql.DictCursor)</div><div class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> cur.execute(sql.replace(<span class="string">'?'</span>, <span class="string">'%s'</span>), args <span class="keyword">or</span> ())</div><div class="line">        <span class="keyword">if</span> size:</div><div class="line">            rs = <span class="keyword">yield</span> <span class="keyword">from</span> cur.fetchmany(size)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            rs = <span class="keyword">yield</span> <span class="keyword">from</span> cur.fetchall()</div><div class="line">        <span class="keyword">yield</span> <span class="keyword">from</span> cur.close()</div><div class="line">        logging.info(<span class="string">'rows returned: %s'</span> % len(rs))</div><div class="line">        <span class="keyword">return</span> rs</div><div class="line"></div><div class="line"><span class="meta">@asyncio.coroutine</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">execute</span><span class="params">(sql, args, autocommit=True)</span>:</span></div><div class="line">    log(sql)</div><div class="line">    <span class="keyword">with</span> (<span class="keyword">yield</span> <span class="keyword">from</span> __pool) <span class="keyword">as</span> conn:</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> autocommit:</div><div class="line">            <span class="keyword">yield</span> <span class="keyword">from</span> conn.begin()</div><div class="line">        <span class="keyword">try</span>:</div><div class="line">            cur = <span class="keyword">yield</span> <span class="keyword">from</span> conn.cursor()</div><div class="line">            <span class="keyword">yield</span> <span class="keyword">from</span> cur.execute(sql.replace(<span class="string">'?'</span>, <span class="string">'%s'</span>), args)</div><div class="line">            affected = cur.rowcount</div><div class="line">            <span class="keyword">yield</span> <span class="keyword">from</span> cur.close()</div><div class="line">            <span class="keyword">if</span> <span class="keyword">not</span> autocommit:</div><div class="line">                <span class="keyword">yield</span> <span class="keyword">from</span> conn.commit()</div><div class="line">        <span class="keyword">except</span> BaseException <span class="keyword">as</span> e:</div><div class="line">            <span class="keyword">if</span> <span class="keyword">not</span> autocommit:</div><div class="line">                <span class="keyword">yield</span> <span class="keyword">from</span> conn.rollback()</div><div class="line">            <span class="keyword">raise</span></div><div class="line">        <span class="keyword">return</span> affected</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">create_args_string</span><span class="params">(num)</span>:</span></div><div class="line">    L = []</div><div class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> range(num):</div><div class="line">        L.append(<span class="string">'?'</span>)</div><div class="line">    <span class="keyword">return</span> <span class="string">', '</span>.join(L)</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -647,7 +760,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -657,10 +770,10 @@
             
             
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
@@ -668,15 +781,22 @@
             
             
             <div class="site-state-item site-state-tags">
-              
-                <span class="site-state-item-count">1</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
         </nav>
 
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
         
 
         <div class="links-of-author motion-element">
